@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #00195a;
+  overflow-x: hidden;
+  height: 230vh;
+}
+
+.strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40px;
+  font-size: 24px;
+  background: #33ceffab;
+  color: white;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.btn {
+  background: #fdf309;
+  color: white;
+  width: 90px;
+  height: 32px;
+  border-radius: 10px;
+  opacity: 0px;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.btn {
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+  border-radius: 18px;
+  /* margin-top: 5%; */
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(109, 109, 11);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: bottom right;
+  transform: scale(0);
+  border-radius: 10px;
+}
+.btn:hover:before {
+  transition: transform 0.5s;
+  transform-origin: top left;
+  transform: scale(1);
+  border-radius: 10px;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid yellow;
+  box-sizing: border-box;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: bottom right;
+  transform: scale(1);
+  border-radius: 10px;
+}
+.btn:hover:after {
+  transition: transform 0.5s;
+  transform-origin: top left;
+  transform: scale(0);
+}
+
+nav{
+  /* background-color: #0E1F56; */
+  width: 100vw;
+  color: white;
+  height: 5vw;
+  font-family: "Libre Franklin", sans-serif;
+font-optical-sizing: auto;
+font-weight: 900;
+font-style: normal;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 20;
+}
+
+nav:before{
+  content: "";
+  background-color: #0E1F56;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+
+}
+
+
+nav a{
+  font-size: 20px;
+}
+/* nav:before {
+  content: "";
+  background: #00195a;
+
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+} */
+
+nav .right ul {
+  display: flex;
+  margin-right: 450px;
+}
+
+nav .left {
+  margin-left: 2vw;
+  font-size: 25px;
+}
+nav .right ul li {
+  list-style: none;
+  margin-right: 5vw;
+  text-decoration: none;
+  
+}
+
+.logo {
+  display: flex;
+  width: 20px;
+  height: 60px;
+  align-items: center;
+}
+
+.img1 {
+  width: 200px;
+  height: 130px;
+}
+
+.hero-section {
+    display: flex;
+
+}
+
+
+.hs-left{
+    margin-left: 120px;
+    margin-top: 100px;
+}
+
+.hs-left h2 {
+  font-family: "Klee One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 100px;
+  text-align: left;
+  color: #33ceff;
+}
+
+.hs-left h1 {
+  font-family: Londrina Solid;
+  font-size: 90px;
+  font-weight: bolder;
+  line-height: 120px;
+  text-align: left;
+  color: #33ceff;
+}
+
+.hs-left p {
+  color: rgba(190, 202, 202, 0.75);
+  width: 480px;
+  font-size: 20px;
+  /* font-weight: 600; */
+  line-height: 24.48px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+.hs-btn{
+    width: 480px;
+height: 80px;
+/* top: 707px;
+left: -10760px; */
+/* gap: 0px; */
+border-radius: 20px;
+opacity: 0px;
+background: linear-gradient(to right,rgb(0, 157, 255),rgb(111, 172, 208));
+margin-top: 60px;
+font-family: Mitr;
+font-size: 30px;
+font-weight: 600;
+border: none;
+text-align: center;
+
+}
+
+
+.hs-right{
+  position: absolute;
+  left: 600px;
+  top: 220px;
+  /* width: 1500px; */
+}
+
+
+
+
+.right-img1{
+  position: relative;
+  right: -290px;
+  top: 40px;
+ 
+}
+.right-img2{
+    position: relative;
+    top: -428px;
+    left: 580px;
+
+}
+.right-img3{
+    position: relative;
+    top: -480px;
+    left:284px;
+}
+.right-img4{
+    position: relative;
+    top: -475px;
+    left: 350px;
+}
+.right-img5{
+    position: relative;
+    top: -760px;
+    left: 510px;
+}
+.right-img6{
+    position: relative;
+top: -770px;
+left: 670px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+  position: relative;
+  max-width: 70vw;
+  width: 70vw;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 65vh;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-left: 200px;
+  margin-top: 250px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s;
+}
+
+.slide img {
+  width: 70vw;
+  height: 65vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+.caption {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.hs-btn a{
+  color: black;
+}
+.hs-btn:hover{
+   cursor: pointer;
+   background: linear-gradient(to right, rgb(111, 172, 208),rgb(6, 184, 228));
+   color: white;
+}
+
+.hs-btn a:hover{
+  color: wheat;
+}
+
+
+
+
+.slider-header h1{
+  margin: 82px 90px;
+  margin-bottom: 0;
+  display: flex;
+  top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* left: 50px; */
+  color: #ffffff;
+  /* background:linear-gradient(red,yellow); */
+  /* box-shadow: 10px 10px yellow; */
+  text-shadow: 3px 4px 30px rgb(11, 175, 229) ;
+
+  font-family: Lalezar;
+  font-size: 46px;
+  font-weight: 400;
+  /* line-height: 150.43px; */
+  /* text-align: left; */
+  text-decoration: underline;
+}
