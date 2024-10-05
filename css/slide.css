@@ -14,7 +14,7 @@ body{
     /* background: linear-gradient(rgba(0, 0, 0, 0.682), rgba(0, 0, 0, 0.529)), url('bg.jpg'); */
     background-attachment: fixed;
     background-size: cover;
-    height: 200vw;
+    /* height: 200vw; */
     overflow-x: hidden;
     background-image: url(../img/asset+32.png);
     
