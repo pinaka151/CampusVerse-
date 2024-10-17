@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#container{
+    height: 410px;
+    width: 100vw;
+    /* margin-left: 5px; */
+    margin-top: 220px;
+    /* margin-left: 50px; */
+    background-color: #001c7f;
+    position: absolute;
+    /* border-radius: 50px; */
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-items{
+    margin-left: 50px;
+}
+#img1{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+}
+#img2{
+    margin-top: 30px;
+    margin-left: -10px;
+    position: absolute;
+    
+}
+#text1{
+    height: 100px;
+    width: 320px;
+    margin-left: 60px;
+    margin-top: -10px;
+    color: aliceblue;
+    font-size: 20px;
+}
+#other{
+    margin-top: -155px;
+    margin-left: 550px;
+    color: aliceblue;
+    font-size: 25px;
+    height: 100px;
+    width: 175px;
+    position: absolute;
+}
+
+
+
+.text2 ul{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    /* margin-left: 40px; */
+}
+
+.text2 ul li{
+    list-style: none;
+    font-size: 18px;
+}
+.text2 ul li a:hover{
+ color: grey;
+}
+
+#disc{
+    height: 100px;
+    width: 320px;
+    /* margin-left: 440px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.footer-disclaimer{
+    margin-left: 40px;
+    /* width: 80vw; */
+}
+#text3{
+    height: 100px;
+    width: 80vw;
+    margin-left: 20px;
+    margin-top: -70px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#social{
+    margin-top: -355px;
+    margin-left: 850px;
+    color: aliceblue;
+    font-size: 25px;
+    height: 100px;
+    width: 175px;
+    position: absolute;
+}
+#text4{
+    font-size: 20px;
+    width: 300px;
+}
+#photo1{
+    height: 100px;
+    width: 320px;
+    margin-left: 30px;
+    margin-top: -150px;
+}

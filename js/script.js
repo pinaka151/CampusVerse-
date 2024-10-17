@@ -36,34 +36,28 @@ showSlide(currentIndex);
 
 // Interest
 
+document.getElementById('interests').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents form from refreshing the page on submit
 
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const checkboxes = document.querySelectorAll('input[name="events"]:checked');
+    
+    let selectedEvents = [];
+    checkboxes.forEach((checkbox) => {
+        selectedEvents.push(checkbox.value);
+    });
 
-let Events = document.getElementsByClassName(".sort")
-
-button.addEventListener("dblclick" , ()=>{
-  let HTML =  document.querySelector(".box").innerHTML = "<b>Your account is  hacked ...</b>"
-   document.querySelector(".box").innerHTML = HTML + "<p>Your ac password is *********...</p>"
-
-})
-
-
-button.addEventListener("contextmenu" , ()=>{
-  alert("Your are fired")
-
-})
-
-
-button.addEventListener("keypress" , ()=>{
-  alert("tussi kon")
-
-})
+    // Display the submitted data
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `<strong>Name:</strong> ${name} <br>
+                           <strong>Email:</strong> ${email} <br>
+                           <strong>Selected Events:</strong> ${selectedEvents.length > 0 ? selectedEvents.join(', ') : 'None'}`;
+});
 
 
 
-document.addEventListener("keypress" , ()=>{
-  alert("tussi kon")
 
-})
 
 
 

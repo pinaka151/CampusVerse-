@@ -78,3 +78,19 @@ button:hover {
 .interests2{
     margin-left: 30px;
 }
+
+
+
+.right{
+    position: absolute;
+    left: 800px;
+}
+
+.left{
+    position: absolute;
+    left: 150px;
+}
+
+.left img{
+    width: 600px;
+}

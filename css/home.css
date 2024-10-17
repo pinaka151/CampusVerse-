@@ -241,7 +241,12 @@ text-align: center;
   /* width: 1500px; */
 }
 
-
+.nav-home{
+  /* text-decoration: underline; */
+  text-decoration: underline;
+    color: rgb(15, 178, 223);
+    transition: all 0.5s;
+}
 
 
 .right-img1{
@@ -324,7 +329,7 @@ left: 670px;
   width: 70vw;
   height: 65vh;
   border-radius: 10px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 

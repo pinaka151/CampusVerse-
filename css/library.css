@@ -1,0 +1,15 @@
+.library-header{
+    background-color: #00195A95;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.paragraph{
+    background-color:#FBD061;
+    width: 100vw;
+}
